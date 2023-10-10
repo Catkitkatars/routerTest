@@ -1,0 +1,11 @@
+<div class="post">
+    <h3><?= $postName ?></h3>
+    <p class="post-date_create"><?= $postDate ?></p>
+    <p class="post-user"><?= $postCreatorName ?></p>
+    <p><?= $postText ?></p>
+    <div class="post-action">
+        <a href="posts/<?= $id ?>">Open</a>
+        <a href="posts/edit?id=<?= $id ?>">change</a>
+        <a href="posts/delete?id=<?= $id ?>">delete</a>
+    </div>
+</div>

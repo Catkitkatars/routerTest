@@ -1,0 +1,36 @@
+
+<form action="send<?php 
+    if(isset($id)) {
+        echo '?id='.$id;
+    }
+?>" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="
+    <?php 
+    if($name) {
+        echo $name;
+    }
+    ?>">
+
+    <p>date <?php
+    if(isset($date)) {
+        echo $date;
+    } 
+    ?></p>
+
+    <p>user <?php 
+    if(isset($user)) {
+        echo $user;
+    } 
+    ?></p>
+
+    <label for="text">Text:</label>
+    <input type="text" name='text' id="text" value="<?php 
+    if($text) {
+        echo $text;
+    }
+    ?>">
+    <br>
+    <br>
+    <button type="submit">send</button>
+</form>
